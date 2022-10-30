@@ -60,6 +60,10 @@ select {
   justify-content: space-between;
 }
 
+.date-time-element {
+  text-align: right;
+}
+
 .time {
   color: #ffffff;
   font-size: 24px;
@@ -75,11 +79,11 @@ select {
   background-color: #fc8a8a;
 }
 
-#seattle {
+#vienna {
   background-color: #fb89ed;
 }
 
-#row-3 {
+#seattle {
   background-color: #d18afb;
 }
 #lima {
