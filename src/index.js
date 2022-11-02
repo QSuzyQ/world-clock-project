@@ -56,6 +56,9 @@ function updateTime() {
 
 function updateCity(event) {
   let cityTimeZone = event.target.value;
+  if (cityTimeZone === "current") {
+    cityTimeZone = moment.tz.guess();
+  }
   let cityName = cityTimeZone.replace("_", " ").split("/")[1];
   let cityTime = moment().tz(cityTimeZone);
   let citiesElement = document.querySelector("#cities");
@@ -63,7 +66,7 @@ function updateCity(event) {
   <div class="city" id="selection">
           <div>
             <h2>${cityName}</h2>
-            <h3>Turkey</h3>
+            <h3></h3>
           </div>
           <div class="date-time-element">
             <div class="time">${cityTime.format(
