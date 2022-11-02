@@ -86,6 +86,10 @@ select {
 #seattle {
   background-color: #d18afb;
 }
+
+#selection {
+  background-color: #ffc65c;
+}
 #lima {
   background-color: #8b98fa;
 }
