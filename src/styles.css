@@ -46,6 +46,15 @@ select {
   border-radius: 5px;
 }
 
+.all-cities-link {
+  text-decoration: none;
+  transition: all 200ms ease-in-out;
+}
+
+.all-cities-link:hover {
+  color: #73c7e5;
+}
+
 .container {
   background-color: #ffffff;
   max-width: 414px;
