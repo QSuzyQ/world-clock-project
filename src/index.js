@@ -9,13 +9,13 @@ function updateTime() {
     "h:mm:ss [<span>]A[</span>]"
   );
 
-  //Vienna
-  let viennaElement = document.querySelector("#vienna");
-  let viennaDateElement = viennaElement.querySelector(".date");
-  let viennaTimeElement = viennaElement.querySelector(".time");
-  let viennaTime = moment().tz("Europe/Vienna");
-  viennaDateElement.innerHTML = viennaTime.format("MMMM Do, YYYY");
-  viennaTimeElement.innerHTML = viennaTime.format("h:mm:ss [<span>]A[</span>]");
+  //Zagreb
+  let zagrebElement = document.querySelector("#zagreb");
+  let zagrebDateElement = zagrebElement.querySelector(".date");
+  let zagrebTimeElement = zagrebElement.querySelector(".time");
+  let zagrebTime = moment().tz("Europe/zagreb");
+  zagrebDateElement.innerHTML = zagrebTime.format("MMMM Do, YYYY");
+  zagrebTimeElement.innerHTML = zagrebTime.format("h:mm:ss [<span>]A[</span>]");
 
   //Seattle
   let seattleElement = document.querySelector("#seattle");
@@ -72,7 +72,7 @@ function updateCity(event) {
             <div class="time">${cityTime.format(
               "h:mm:ss"
             )} <span>${cityTime.format("A")}</span></div>
-            <div class="date">${cityTime.format("MMMM Do YYYYY")}</div>
+            <div class="date">${cityTime.format("MMMM Do YYYY")}</div>
           </div>
         </div>
   `;
